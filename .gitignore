@@ -1,0 +1,28 @@
+# Build output
+build/
+.gradle/
+.kotlin/
+*.apk
+*.aab
+*.jar
+!android/gradle/wrapper/gradle-wrapper.jar
+
+# Local machine config
+local.properties
+.idea/
+*.iml
+
+# Printer captures (may contain personal data)
+*.prn
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.jks
+*.keystore
+id_rsa
+id_rsa.dsa
+credentials.json
