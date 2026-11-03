@@ -44,6 +44,11 @@ Toolchains live in `~/.local/toolchains` (JDK 21, kotlinc, Android SDK, Gradle).
 cd android && ./gradlew assembleRelease      # -> app/build/outputs/apk/release/app-release.apk
 ```
 
+Release APKs are signed with the key in `android/keystore.properties` (gitignored; keys
+`storeFile`, `storePassword`, `keyAlias`, `keyPassword`), or with the `ANDROID_*` repository
+secrets in CI. Without either, `assembleRelease` falls back to the debug key, and that APK
+won't install over a release from this repo.
+
 ## App features
 
 - Quality: Max DPI (1200 dpi, PCL3GUI over port 9100) or Best / Normal / Draft (IPP, PWG raster).

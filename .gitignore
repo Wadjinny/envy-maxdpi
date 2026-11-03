@@ -26,3 +26,4 @@ local.properties
 id_rsa
 id_rsa.dsa
 credentials.json
+keystore.properties
