@@ -3,6 +3,10 @@
 Prints photos from Android on an HP ENVY 6000-series printer at the Windows driver's
 "Max DPI" quality (1200×1200 dpi), without Windows.
 
+## Download
+
+Grab the latest `envy-maxdpi-*.apk` from [Releases](https://github.com/Wadjinny/envy-maxdpi/releases/latest) and install it on your phone (allow installs from unknown sources). Every push to `main` also builds an APK as a [workflow artifact](https://github.com/Wadjinny/envy-maxdpi/actions).
+
 ## How it works
 
 The HP Windows driver sends PCL3GUI: RGB rows at 1200 dpi compressed with HP mode 10,
